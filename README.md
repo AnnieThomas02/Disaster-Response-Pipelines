@@ -43,7 +43,9 @@ The web application shows 3 different bar charts: Genre frequency, top 5 respons
 If you put in a message into the text bar, you can see what my model would predict of the 36 different feature variables.
 
 ## ScreenShot
-![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
+
+![view6914b2f4-3001 udacity-student-workspaces com_ (1)](https://user-images.githubusercontent.com/71045070/96684141-f503f500-132f-11eb-9a80-92ff67093c07.png)
+![view6914b2f4-3001 udacity-student-workspaces com_go_query=I+am+hungry](https://user-images.githubusercontent.com/71045070/96684209-15cc4a80-1330-11eb-84ee-9158c2587aea.png)
 
 
 ## Acknowledgements
