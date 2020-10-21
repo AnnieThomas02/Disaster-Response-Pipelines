@@ -21,27 +21,33 @@ This project requires Python 3.x and the following Python libraries installed:
 ## Instructions on using the web app
 
 1	Run the following commands in the project's root directory to set up your database and model.
-
-•	To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-
-•	To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+  -	To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+  -	To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 
 2	Run the following command in the app's directory to run your web app. python run.py
-•	Will need to point location of pickle file from train.py output
-•	Open separate terminal window and run env|grep WORK
-•	From the output of that, put in the URL that will replace https://SPACEID-3001.SPACEDOMAIN
+  -	Will need to point location of pickle file from train.py output
+  -	Open separate terminal window and run env|grep WORK
+  -	From the output of that, put in the URL that will replace https://SPACEID-3001.SPACEDOMAIN
 
 
+## File Descriptions
+### ETL pipeline process(process_data.py)
+This code extract Data from  files: messages.csv (containing message data) and categories.csv (classes of messages) that read into  panda Dataframe , merge together , cleaned   the data and tokenized the data.Dataframe was then loaded to a SQLite database i.e DisasterResponse.db to be loaded by the next step of the project
 
-## ETL pipeline process(process_data.py)
-•	This code extract Data from  files: messages.csv (containing message data) and categories.csv (classes of messages) that read into  panda Dataframe , merge together , cleaned the data and tokenized the data.
-•	Dataframe was then loaded to a SQLite database to be loaded by the next step of the project
+### ML pipeline process(train_classifier.py)
+This code takes the SQLite database(DisasterResponse.db) produced by process_data.py as an input and uses the data contained within it to train and tune a ML model for categorizing messages. The output is a pickle file containing the fitted model. Test evaluation metrics are also printed as part of the training process.
 
-## ML pipeline process(train_classifier.py)
-•	This code takes the SQLite database produced by process_data.py as an input and uses the data contained within it to train and tune a ML model for categorizing messages. The output is a pickle file containing the fitted model. Test evaluation metrics are also printed as part of the training process.
+### Web Application (run.py)
+The web application shows 3 different bar charts: Genre frequency, top 5 response features, and the top 5 words most frequently used in the messages.
 
-## Web Application (run.py)
+If you put in a message into the text bar, you can see what my model would predict of the 36 different feature variables.
+
+## ScreenShot
+![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
 
 
-
+## Acknowledgements
+- Udacity
+- Youtube
+- Stackoverflow
 
