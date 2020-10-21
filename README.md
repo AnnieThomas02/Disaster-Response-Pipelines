@@ -18,7 +18,7 @@ This project requires Python 3.x and the following Python libraries installed:
 11.	Re
 12.	Pickle
 
-## Instructions on using the web app
+## Instructions on using the web app 
 
 1	Run the following commands in the project's root directory to set up your database and model.
   -	To run ETL pipeline that cleans data and stores in database
