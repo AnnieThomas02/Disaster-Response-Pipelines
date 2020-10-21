@@ -42,9 +42,7 @@ This code extract Data from  files: messages.csv (containing message data) and c
 This code takes the SQLite database(DisasterResponse.db) produced by process_data.py as an input and uses the data contained within it to train and tune a ML model for categorizing messages. The output is a pickle file containing the fitted model. Test evaluation metrics are also printed as part of the training process.
 
 ### Web Application (run.py)
-The web application shows 3 different bar charts: Genre frequency, top 5 response features, and the top 5 words most frequently used in the messages.
-
-If you put in a message into the text bar, you can see what my model would predict of the 36 different feature variables.
+The web application shows 3 different bar charts: Genre frequency.If you put in a message into the text bar, you can see what my model would predict of the 36 different feature variables.
 
 ## ScreenShot
 ![view6914b2f4-3001 udacity-student-workspaces com_ (1)](https://user-images.githubusercontent.com/71045070/96684605-aefb6100-1330-11eb-99fa-cf193173fd00.png)
