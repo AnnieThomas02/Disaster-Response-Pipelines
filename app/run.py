@@ -47,7 +47,6 @@ def index():
     category_boolean = (df.iloc[:,4:] != 0).sum().values
     
     # create visuals
-    # TODO: Below is an example - modify to create your own visuals
     graphs = [
         {
             'data': [
