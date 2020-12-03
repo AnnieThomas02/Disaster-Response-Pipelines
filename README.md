@@ -1,7 +1,7 @@
 # Disaster-Response-Pipelines
 
 ## Overview
-This project used processed data originally from Figure Eight's Disaster Response data to build a model for an API that classifies disaster messages. This project, a web app is created to read in a user message input and then assign up to 36 categories to this message input. In this classification process, I used random forest classifier combined with multipleoutput classifier to perform the task
+This project used processed data originally from Figure Eight's Disaster Response data to build a model for an API that classifies disaster messages. This project, a web app is created to read in a user message input and then assign up to 36 categories to this message input. In this classification process, I used random forest classifier combined with multipleoutput classifier to perform the task.
 
 ## Install
 This project requires Python 3.x and the following Python libraries installed:
